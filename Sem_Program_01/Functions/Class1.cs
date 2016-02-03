@@ -33,7 +33,7 @@ namespace Functions
 
         public static int ReadConsole()
         {
-            return int.Parse(Console.ReadLine());
+           return int.Parse(Console.ReadLine());
         }
     }
 }

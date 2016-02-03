@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using Functions;
 
 namespace Sem_Program_01
@@ -8,7 +7,7 @@ namespace Sem_Program_01
     {
         private int[] _arrayintInts;
 
-        private static void Main(String[] args)
+        private static void Main()
         {
             var program = new Program {_arrayintInts = new[] {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}};
             Console.WriteLine("Array right now: {0}\n", Class1.ReturnArray(program._arrayintInts));
