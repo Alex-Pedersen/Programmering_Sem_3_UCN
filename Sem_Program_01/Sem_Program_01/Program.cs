@@ -19,6 +19,8 @@ namespace Sem_Program_01
             var varnumber = Console.Read();
             Console.WriteLine("Amount of numbers in array with the number : " + program.ArraySearch(varnumber));
 
+            Console.WriteLine("The array has the number 3 : " + program.checkerMethod());
+
             Console.WriteLine("\n\nPress any key to close program");
             Console.ReadKey();
         }
@@ -43,8 +45,14 @@ namespace Sem_Program_01
                     totalNumbersVar++;
                 }
             }
-
             return totalNumbersVar;
+        }
+
+        private bool checkerMethod()
+        {
+            bool checker;
+            checker = _arrayintInts.Contains(3);
+            return checker;
         }
     }
 }
