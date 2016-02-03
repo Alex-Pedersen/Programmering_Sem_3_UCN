@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Functions;
 
 namespace Sem_Program_01
 {
@@ -9,50 +10,25 @@ namespace Sem_Program_01
 
         private static void Main(string[] args)
         {
+            if (args == null) throw new ArgumentNullException(nameof(args));
+            if (args.Length == 0) throw new ArgumentException("Argument is empty collection", nameof(args));
+
             var program = new Program {_arrayintInts = new[] {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}};
             Console.WriteLine(program._arrayintInts);
 
-            var sum = program.SumOfArray();
+            var sum = Class1.SumOfArray(program._arrayintInts);
             Console.WriteLine("Total amount of the array is : " + sum);
 
             Console.Write("Enter the number you want to search for : ");
             var varnumber = Console.Read();
-            Console.WriteLine("Amount of numbers in array with the number : " + program.ArraySearch(varnumber));
+            Console.WriteLine("Amount of numbers in array with the number : " + Class1.ArraySearch(program._arrayintInts, varnumber));
 
-            Console.WriteLine("The array has the number 3 : " + program.checkerMethod());
+            Console.WriteLine("The array has the number 3 : " + Class1.checkerMethod(program._arrayintInts));
 
             Console.WriteLine("\n\nPress any key to close program");
             Console.ReadKey();
         }
 
-        private int SumOfArray()
-        {
-            return _arrayintInts.Sum();
-        }
-
-        private int AverageOfArray()
-        {
-            return (int) _arrayintInts.Average();
-        }
-
-        private int ArraySearch(int searchVar)
-        {
-            var totalNumbersVar = 0;
-            foreach (var VARIABLE in _arrayintInts)
-            {
-                if (VARIABLE == searchVar)
-                {
-                    totalNumbersVar++;
-                }
-            }
-            return totalNumbersVar;
-        }
-
-        private bool checkerMethod()
-        {
-            bool checker;
-            checker = _arrayintInts.Contains(3);
-            return checker;
-        }
+        
     }
 }
