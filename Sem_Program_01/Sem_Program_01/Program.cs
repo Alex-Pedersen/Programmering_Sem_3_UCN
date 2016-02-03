@@ -11,22 +11,22 @@ namespace Sem_Program_01
         private static void Main(String[] args)
         {
             var program = new Program {_arrayintInts = new[] {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}};
-            Console.WriteLine("Array right now: " + Class1.ReturnArray(program._arrayintInts) + "\n");
+            Console.WriteLine("Array right now: {0}\n", Class1.ReturnArray(program._arrayintInts));
 
-            Console.WriteLine("\nTotal amount of the array is : " + Class1.SumOfArray(program._arrayintInts));
+            Console.WriteLine("\nTotal amount of the array is : {0}", Class1.SumOfArray(program._arrayintInts));
 
-            Console.WriteLine("\nAverage of array : " + Class1.AverageOfArray(program._arrayintInts));
+            Console.WriteLine("\nAverage of array : {0}", Class1.AverageOfArray(program._arrayintInts));
 
-            Console.Write("\nEnter the number you want to search for : ");
-            var varnumber = Console.Read();
-            Console.WriteLine("\nAmount of numbers in array with the number : " + Class1.ArraySearch(program._arrayintInts, varnumber));
+            Console.WriteLine("\nEnter the number you want to search for : \n");
 
-            Console.WriteLine("\nThe array has the number 3 : " + Class1.CheckerMethod(program._arrayintInts));
+            Console.WriteLine("\nAmount of numbers in array with the number : " + Class1.ArraySearch(program._arrayintInts, Class1.ReadConsole()));
+
+            Console.WriteLine("\nEnter the number you want to search for : \n");
+           
+            Console.WriteLine("\nEnter a number to see if it's in the Array : {0}\n", Class1.CheckerMethod(program._arrayintInts, Class1.ReadConsole()));
 
             Console.WriteLine("\n\nPress any key to close program");
-            Console.ReadKey();
+            Class1.ReadConsole();
         }
-
-        
     }
 }

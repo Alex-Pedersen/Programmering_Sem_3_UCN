@@ -5,35 +5,35 @@ namespace Functions
 {
     public static class Class1
     {
-        public static int SumOfArray(int[] _arrayintInts)
+        public static int SumOfArray(int[] arrayintInts)
         {
-            return _arrayintInts.Sum();
+            return arrayintInts.Sum();
         }
 
-        public static int AverageOfArray(int[] _arrayintInts)
+        public static int AverageOfArray(int[] arrayintInts)
         {
-            return (int)_arrayintInts.Average();
+            return (int) arrayintInts.Average();
         }
 
-        public static int ArraySearch(int[] _arrayintInts, int searchVar)
+        public static int ArraySearch(int[] arrayintInts, int searchVar)
         {
-            return _arrayintInts.Count(variable => variable == searchVar);
+            return arrayintInts.Count(variable => variable == searchVar);
         }
 
-        public static bool CheckerMethod(int[] _arrayintInts)
+        public static bool CheckerMethod(int[] arrayintInts, int searchVar)
         {
-            var checker = _arrayintInts.Contains(3);
+            var checker = arrayintInts.Contains(searchVar);
             return checker;
         }
 
-        public static string ReturnArray(int[] _arrayintInts)
+        public static string ReturnArray(int[] arrayintInts)
         {
-            var Array = "";
-            foreach (var VARIABLE in _arrayintInts)
-            {
-                Array += " " + VARIABLE;
-            }
-            return Array;
+            return arrayintInts.Aggregate("", (current, variable) => string.Format("{0}{1}", current, (" " + variable)));
+        }
+
+        public static int ReadConsole()
+        {
+            return int.Parse(Console.ReadLine());
         }
     }
 }
