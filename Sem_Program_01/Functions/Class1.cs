@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Functions
 {
-    public class Class1
+    public static class Class1
     {
         public static int SumOfArray(int[] _arrayintInts)
         {
@@ -23,10 +20,20 @@ namespace Functions
             return _arrayintInts.Count(variable => variable == searchVar);
         }
 
-        public static bool checkerMethod(int[] _arrayintInts)
+        public static bool CheckerMethod(int[] _arrayintInts)
         {
             var checker = _arrayintInts.Contains(3);
             return checker;
+        }
+
+        public static string ReturnArray(int[] _arrayintInts)
+        {
+            var Array = "";
+            foreach (var VARIABLE in _arrayintInts)
+            {
+                Array += " " + VARIABLE;
+            }
+            return Array;
         }
     }
 }

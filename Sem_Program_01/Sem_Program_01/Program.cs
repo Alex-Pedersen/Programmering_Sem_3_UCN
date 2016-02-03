@@ -8,22 +8,20 @@ namespace Sem_Program_01
     {
         private int[] _arrayintInts;
 
-        private static void Main(string[] args)
+        private static void Main(String[] args)
         {
-            if (args == null) throw new ArgumentNullException(nameof(args));
-            if (args.Length == 0) throw new ArgumentException("Argument is empty collection", nameof(args));
-
             var program = new Program {_arrayintInts = new[] {10, 20, 30, 40, 50, 60, 70, 80, 90, 100}};
-            Console.WriteLine(program._arrayintInts);
+            Console.WriteLine("Array right now: " + Class1.ReturnArray(program._arrayintInts) + "\n");
 
-            var sum = Class1.SumOfArray(program._arrayintInts);
-            Console.WriteLine("Total amount of the array is : " + sum);
+            Console.WriteLine("\nTotal amount of the array is : " + Class1.SumOfArray(program._arrayintInts));
 
-            Console.Write("Enter the number you want to search for : ");
+            Console.WriteLine("\nAverage of array : " + Class1.AverageOfArray(program._arrayintInts));
+
+            Console.Write("\nEnter the number you want to search for : ");
             var varnumber = Console.Read();
-            Console.WriteLine("Amount of numbers in array with the number : " + Class1.ArraySearch(program._arrayintInts, varnumber));
+            Console.WriteLine("\nAmount of numbers in array with the number : " + Class1.ArraySearch(program._arrayintInts, varnumber));
 
-            Console.WriteLine("The array has the number 3 : " + Class1.checkerMethod(program._arrayintInts));
+            Console.WriteLine("\nThe array has the number 3 : " + Class1.CheckerMethod(program._arrayintInts));
 
             Console.WriteLine("\n\nPress any key to close program");
             Console.ReadKey();
