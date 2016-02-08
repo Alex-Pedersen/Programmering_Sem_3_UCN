@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sem_Program_01", "Sem_Program_01\Sem_Program_01.csproj", "{DCE5FFF9-B41B-4966-AC48-A911630504E5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array_Manipulation", "Sem_Program_01\Array_Manipulation.csproj", "{DCE5FFF9-B41B-4966-AC48-A911630504E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Functions", "Functions\Functions.csproj", "{B3172BAF-022F-4616-816D-08A30A55D359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Architectural_Exercise", "ConsoleApplication1\Architectural_Exercise.csproj", "{E4BC0456-8402-4D06-B5EE-8EA149E7807F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{B3172BAF-022F-4616-816D-08A30A55D359}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3172BAF-022F-4616-816D-08A30A55D359}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3172BAF-022F-4616-816D-08A30A55D359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4BC0456-8402-4D06-B5EE-8EA149E7807F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4BC0456-8402-4D06-B5EE-8EA149E7807F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4BC0456-8402-4D06-B5EE-8EA149E7807F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4BC0456-8402-4D06-B5EE-8EA149E7807F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
