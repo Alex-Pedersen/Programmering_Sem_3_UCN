@@ -9,7 +9,7 @@ namespace EmpProjectV1
     {
         static void Main(string[] args)
         {
-            Employee a = new Employee("Jens", "System Programmer", 25000);
+            var a = new Employee("Jens", "System Programmer", 25000);
             Employee b = new Employee("Peter", "System Developer", 40000);
             Employee c = new Employee("Kurt", "Human Resource", 45000);
             Employee d = new Employee("Inga", "Programmer", 32000);
