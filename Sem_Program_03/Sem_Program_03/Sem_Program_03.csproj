@@ -43,11 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Abstract\ACity.cs" />
+    <Compile Include="Abstract\APerson.cs" />
+    <Compile Include="Classes\City.cs" />
+    <Compile Include="Classes\Person.cs" />
+    <Compile Include="Interface\ICity.cs" />
+    <Compile Include="Interface\IPerson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Frontend\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
