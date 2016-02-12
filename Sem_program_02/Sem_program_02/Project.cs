@@ -1,7 +1,6 @@
-using System;
 using System.Collections.Generic;
 
-namespace EmpProjectV1
+namespace Sem_Program_02
 {
 	public class Project
 	{
@@ -24,7 +23,7 @@ namespace EmpProjectV1
 		public void AddEmployee(Employee e, int hours)
 		{
 			WorksOn wOn = new WorksOn(hours, e, this);
-			this.worksOnList.Add(wON);
+			this.worksOnList.Add(wOn);
 		}
 
 		//		public int GetTotalHours()

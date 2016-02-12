@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace EmpProjectV1
+namespace Sem_Program_02
 {
-    class Program
+    static class Program
     {
         static void Main(string[] args)
         {
@@ -21,7 +19,6 @@ namespace EmpProjectV1
             p1.AddEmployee(a, 150);
             p1.AddEmployee(b, 50);
             p1.AddEmployee(c, 250);
-
             p2.AddEmployee(a, 50);
             p2.AddEmployee(d, 350);
             p2.AddEmployee(e, 10);

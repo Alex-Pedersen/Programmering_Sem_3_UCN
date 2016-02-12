@@ -1,6 +1,4 @@
-using System;
-
-namespace EmpProjectV1
+namespace Sem_Program_02
 {
 	public class WorksOn
 	{

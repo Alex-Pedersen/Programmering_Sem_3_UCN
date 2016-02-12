@@ -1,6 +1,4 @@
-using System;
-
-namespace EmpProjectV1
+namespace Sem_Program_02
 {
 	public class Employee
 	{
@@ -26,5 +24,22 @@ namespace EmpProjectV1
 			return Name;
 		}
 
+	    public string JobTitle
+	    {
+	        get { return jobTitle; }
+	        set { jobTitle = value; }
+	    }
+
+	    public string Name1
+	    {
+	        get { return name; }
+	        set { name = value; }
+	    }
+
+	    public double Salery
+	    {
+	        get { return salery; }
+	        set { salery = value; }
+	    }
 	}
 }
