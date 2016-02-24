@@ -5,7 +5,7 @@ namespace Sem_Program_05.Classes
 {
     class Bottlestate : IObservable
     {
-        private int Amount { get; set; }
+        public int Amount { get; set; }
 
         private List<IObserver> _list = new List<IObserver>();
 
