@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sem_Program_05.Interfaces
+﻿namespace Sem_Program_05.Interfaces
 {
     interface IObserver
     {
-        void NotifyMe();
+        void NotifyMe(int amount);
     }
 }

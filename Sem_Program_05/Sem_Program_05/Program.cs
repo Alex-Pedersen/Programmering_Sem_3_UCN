@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Sem_Program_05.Classes;
 
 namespace Sem_Program_05
 {
@@ -10,6 +7,20 @@ namespace Sem_Program_05
     {
         static void Main(string[] args)
         {
+            //Instantiating objects
+            Bottlestate state = new Bottlestate(15);
+            Pesimist pesimist = new Pesimist();
+            Optimist optimist = new Optimist();
+
+            //Adding observers into bottlestate
+            state.Add(pesimist);
+            state.Add(optimist);
+
+            //Change bottlestate
+            state.ChangeAmount(10);
+
+            Console.ReadLine();
+
         }
     }
 }
