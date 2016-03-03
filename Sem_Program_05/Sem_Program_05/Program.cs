@@ -8,11 +8,15 @@ namespace Sem_Program_05
         static void Main(string[] args)
         {
             ExerciseMethod();
-            Console.WriteLine("Would you like to run the program again? If you do type yes\n");
+            Console.WriteLine("\nWould you like to run the program again? If you do type yes\n");
             var readLine = Console.ReadLine();
-            if (readLine != null && readLine.Equals("yes"))
+
+            while (true)
             {
-                ExerciseMethod();
+                if (readLine != null && readLine.Equals("yes"))
+                {
+                    ExerciseMethod();
+                }
             }
 
         }
@@ -28,7 +32,7 @@ namespace Sem_Program_05
             state.Add(pesimist);
             state.Add(optimist);
 
-            Console.WriteLine("Current state: " + state.Amount);
+            Console.WriteLine("\nCurrent state: " + state.Amount);
 
             //Change bottlestate
             Console.WriteLine("\nEnter the number you want to change, please be below 15");
