@@ -21,9 +21,11 @@ namespace ClientWinform
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            textBox1.AppendText(HelloService.SayHello());
+            //textBox1.AppendText(HelloService.SayHello());
+            var result = await HelloService.ReturnResponseAsync(textBox2.Text);
+            textBox1.AppendText(result + "\n");
         }
     }
 }

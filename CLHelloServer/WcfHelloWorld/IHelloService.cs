@@ -14,5 +14,8 @@ namespace WcfHelloWorld
     {
         [OperationContract]
         string SayHello();
+
+        [OperationContract]
+        string ReturnResponse(string input);
     }
 }

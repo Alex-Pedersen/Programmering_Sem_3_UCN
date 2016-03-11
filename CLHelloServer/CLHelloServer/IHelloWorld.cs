@@ -9,5 +9,6 @@ namespace CLHelloServer
     public interface IHelloWorld
     {
         string SayHello();
+        string ReturnResponse(string input);
     }
 }

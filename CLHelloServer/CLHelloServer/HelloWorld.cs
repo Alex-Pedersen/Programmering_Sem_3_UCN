@@ -10,7 +10,13 @@ namespace CLHelloServer
     {
         public string SayHello()
         {
-            return "Hello Remote World";
+            return "Hello World";
+        }
+
+        public string ReturnResponse(string input)
+        {
+            System.Threading.Thread.Sleep(5000);
+            return input;
         }
     }
 }

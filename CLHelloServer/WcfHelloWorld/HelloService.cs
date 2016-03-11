@@ -16,5 +16,12 @@ namespace WcfHelloWorld
         {
             return HelloWorld.SayHello();
         }
+
+        public string ReturnResponse(string input)
+        {
+            return HelloWorld.ReturnResponse(input);
+        }
+
+        
     }
 }
